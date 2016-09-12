@@ -1,0 +1,41 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 640px;
+  background: #ffffff;
+  color: $black;
+  font-family: $font-helvetica;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+h1{
+}
+
+h3 {
+}
+
+p {
+}
+
+
+input::-ms-input-placeholder {
+}
+
+input::-moz-placeholder {
+}
+
+input::-webkit-input-placeholder {
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}

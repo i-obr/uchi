@@ -1,0 +1,33 @@
+$breakpoints: (
+  "mobile-only":                (max-width: 767px),
+  "medium":                     (min-width: 768px),
+  "large":                      (min-width: 1150px),
+
+  "retina":                     (min-resolution: 144dpi) (min-resolution: 1.5dppx),
+);
+
+// $green:                       #63d1bb;
+// $green--dark:                 #56c3b2;
+// $gray-210:                    #d3d2d2;
+// $gray--lighten:               #f9f9f9;
+// $gray--light:                 #f1f1f1;
+// $gray--dark:                  #ededed;
+// $gray--darken:                #8ea3ad;
+
+$gray:                           #cccccc;
+$gray--light:                    #f0f0f0;
+
+$black:                          #1a1a1a;
+
+$blue:                           #0033a0;
+
+$green:                          #19a33e;
+
+
+$font-size:                      20px;
+$font-size--medium:              30px;
+$font-size--large:               60px;
+
+$line-height:                    1.2;      // 24/20
+
+$font-helvetica:                 Helvetica, Arial, sans-serif;
