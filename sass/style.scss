@@ -8,3 +8,8 @@
 @import "blocks/main-nav.scss";
 @import "blocks/page-content.scss";
 @import "blocks/page-footer.scss";
+
+
+td, th {
+  border: 1px solid red;
+}
