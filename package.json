@@ -6,12 +6,12 @@
   "author": "Иван Образцов",
   "repository": {
     "type": "git",
-    "url": "git@github.com:i-obr/start.git"
+    "url": "git@github.com:i-obr/Lays.git"
   },
   "bugs": {
-    "url": "https://github.com/i-obr/start/issues"
+    "url": "https://github.com/i-obr/Lays/issues"
   },
-  "homepage": "https://github.com/i-obr/start",
+  "homepage": "https://github.com/i-obr/Lays",
   "devDependencies": {
     "autoprefixer": "6.3.6",
     "browser-sync": "2.12.10",
