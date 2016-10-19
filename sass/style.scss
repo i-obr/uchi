@@ -1,15 +1,20 @@
 @import "utils/variables.scss";
 @import "utils/mixins.scss";
+@import "base/fonts.scss";
 @import "base/normalize.scss";
 @import "base/scaffolding.scss";
 
+@import "blocks/container.scss";
 @import "blocks/button.scss";
 @import "blocks/page-header.scss";
+@import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-content.scss";
+@import "blocks/intro.scss";
+@import "blocks/rules.scss";
+@import "blocks/photos.scss";
+@import "blocks/social-upload.scss";
+@import "blocks/gifts.scss";
+@import "blocks/summer.scss";
 @import "blocks/page-footer.scss";
-
-
-td, th {
-  border: 1px solid red;
-}
+@import "blocks/social.scss";
