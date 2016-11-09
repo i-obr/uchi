@@ -1,0 +1,45 @@
+.chart {
+  margin: 15px 0;
+
+  @include respond-to(medium) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  &__time {
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $blue;
+  }
+
+  &__desc {
+    margin-left: 40px;
+    margin-bottom: 20px;
+
+    @include respond-to(medium) {
+      margin-left: 45px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      color: $pink;
+      margin: 10px 0;
+
+      @include respond-to(medium) {
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+    }
+
+    p {
+      margin: 0;
+      color: $gray--light;
+    }
+  }
+}

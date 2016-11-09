@@ -1,1 +1,12 @@
-.page-content {}
+.page-content {
+  padding: 20px 10px;
+  background: #ffffff;
+  margin-bottom: 20px;
+
+  @include respond-to(medium) {
+    // display: flex;
+    padding: 0;
+
+    @include clearfix;
+  }
+}

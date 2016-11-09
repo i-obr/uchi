@@ -1,0 +1,43 @@
+.seminar {
+  margin-bottom: 30px;
+
+  @include respond-to(medium) {
+    padding: 30px;
+    padding-top: 25px;
+    width: 59.4%;
+    margin-bottom: 0;
+    float: left;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__title-main {
+    color: $pink;
+    font-weight: 700;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    display: block;
+
+    @include respond-to(medium) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__title-note {
+    font-size: $font-size + 4;
+    line-height: 1;
+    font-weight: 300;
+    font-style: italic;
+    color: $blue;
+  }
+
+  &__author {
+    font-weight: 700;
+    font-style: italic;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $blue;
+  }
+}

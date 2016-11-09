@@ -1,17 +1,17 @@
-.button {
+.btn {
   display: inline-block;
   padding: 16px 10px;
-  // font-size: ;                  // рзамер шрифта
+  font-size: $font-size;
   line-height: 1;
-  font-weight: 700;
-  // font-family: ;                // семейство шрифта
-  text-transform: uppercase;
+  font-weight: 300;
+  font-family: $font-verdana;
   vertical-align: middle;
   text-decoration: none;
   text-align: center;
-  // border: ;                     // рамки если есть
-  // color: ;                      // цвет текста
-  background: transparent;
+  color: #ffffff;
+  border: 0;
+  background: $blue--dark;
+  border-radius: 30px;
   outline: none;
 }
 

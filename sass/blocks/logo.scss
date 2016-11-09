@@ -1,0 +1,17 @@
+.logo {
+  text-align: center;
+  width: 100%;
+  height: 53px;
+  margin: 0;
+  margin-bottom: 26px;
+  padding-top: 25px;
+
+  @include respond-to(medium) {
+    text-align: left;
+  }
+
+  img {
+    width: 197px;
+    height: 53px;
+  }
+}
