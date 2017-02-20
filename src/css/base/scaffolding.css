@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1024px;
+  font-family: $font-helvetica;
+  font-size: $font-size;
+  line-height: $line-height;
+  background: #fff;
+  color: $black;
+}
+
+h2 {
+  font-family: $font-open-sans;
+  font-size: $font-size--title;
+}
+
+h3 {
+  font-family: $font-helvetica;
+  font-size: $font-size--large;
+}
+
+p {
+  font-family: $font-helvetica;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: blue;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}

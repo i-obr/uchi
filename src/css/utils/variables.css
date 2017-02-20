@@ -1,0 +1,18 @@
+$font-open-sans:                            "Open Sans", "Arial", sans-serif;
+$font-helvetica:                            "Helvetica", "Arial", sans-serif;
+
+$font-size--large:                          18px;
+$font-size:                                 16px;
+$font-size--small:                          14px;
+$font-size--title:                          40px;
+$line-height:                               1.8;
+
+$black:                                     #1e1e1e;
+$blue:                                      #2ac4f3;
+$blue-dark:                                 #1e2c37;
+$blue-hover:                                $blue;
+$gray:                                      #ccc;
+$gray-dark:                                 #666;
+$gray-light:                                #f6f6f6;
+$gray-darken:                               #82898e;
+$green:                                     #74d4ad;

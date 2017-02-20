@@ -160,7 +160,7 @@ sup {
 }
 
 sup {
-  top: -1.5em;
+  top: -0.5em;
 }
 
 sub {
@@ -223,7 +223,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: monospace;
   font-size: 1em;
 }
 
