@@ -9,7 +9,7 @@ gulp.task('lint:html', () => {
 });
 
 gulp.task('lint:sass', () => {
-  return gulp.src('src/sass/style.{scss,sass}')
+  return gulp.src('src/sass/**/*.{scss,sass}')
     .pipe(sassLint())
     .pipe(sassLint.format())
     .pipe(sassLint.failOnError());
