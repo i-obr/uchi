@@ -4,7 +4,7 @@ import run   from 'run-sequence';
 gulp.task('default', () => {
   run(
       'clean',
-      ['copy:fonts', 'copy:html', 'copy:img', 'style',  'images'],
+      ['copy:fonts', 'html', 'copy:img', 'style',  'images'],
       'scripts',
       'server',
       'watch'

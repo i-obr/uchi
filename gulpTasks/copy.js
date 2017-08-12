@@ -6,8 +6,8 @@ gulp.task('copy:fonts', () => {
 });
 
 gulp.task('copy:html', () => {
-  return gulp.src('src/*.html')
-    .pipe(gulp.dest('build'));
+  return gulp.src('src/**/*.html')
+    .pipe(gulp.dest('build/'));
 });
 
 gulp.task('copy:img', () => {

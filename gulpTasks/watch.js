@@ -10,8 +10,8 @@ gulp.task('watch', () => {
     run('style', browserSync.reload);
   });
 
-  watch('src/*.html', () => {
-    run('copy:html', browserSync.reload);
+  watch('src/html/*.html', () => {
+    run(['html', 'html:changed'], browserSync.reload);
   });
 
   watch('src/img/**', () => {
