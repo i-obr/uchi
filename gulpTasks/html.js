@@ -5,6 +5,17 @@ import gulpif            from 'gulp-if';
 import changed           from 'gulp-changed';
 import prettify          from 'gulp-prettify';
 import frontMatter       from 'gulp-front-matter';
+import notify            from 'gulp-notify';
+
+function errorHandler() {
+    const args = Array.prototype.slice.call(arguments);
+    notify.onError({
+        title: 'Compile Error',
+        message: '<%= error.message %>',
+        sound: 'Submarine'
+    }).apply(this, args);
+    this.emit('end');
+};
 
 function renderHtml(onlyChanged) {
     nunjucksRender.nunjucks.configure({
@@ -13,8 +24,10 @@ function renderHtml(onlyChanged) {
         lstripBlocks: false
     });
 
-    return gulp.src('src/html/*.html')
-        .pipe(plumber())
+    return gulp.src('src/html/**/[^_]*.html')
+        .pipe(plumber({
+          errorHandler: errorHandler
+        }))
         .pipe(gulpif(onlyChanged, changed('build')))
         .pipe(frontMatter({ property: 'data' }))
         .pipe(nunjucksRender({

@@ -10,8 +10,12 @@ gulp.task('watch', () => {
     run('style', browserSync.reload);
   });
 
-  watch('src/html/*.html', () => {
-    run(['html', 'html:changed'], browserSync.reload);
+  watch('src/html/**/[^_]*.html', () => {
+    run('html:changed', browserSync.reload);
+  });
+
+  watch('src/html/**/_*.html', () => {
+    run('html', browserSync.reload);
   });
 
   watch('src/img/**', () => {

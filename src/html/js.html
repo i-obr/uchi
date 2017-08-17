@@ -1,0 +1,16 @@
+---
+title: JS - Animation
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+  <div class="animation-js">
+    {% for i in range(1, 101) %}
+      <div class="boat  boat-{{i}}">
+        {{ mixins.icon('boat') }}
+      </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}
