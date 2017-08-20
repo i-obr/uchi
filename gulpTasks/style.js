@@ -1,4 +1,5 @@
 import gulp         from 'gulp';
+import precss       from 'precss';
 import plumber      from 'gulp-plumber';
 import postcss      from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
@@ -7,10 +8,10 @@ import csso         from 'gulp-csso';
 import rename       from 'gulp-rename';
 
 gulp.task('style', () => {
-  return gulp.src('src/sass/style.{scss,sass}')
+  return gulp.src('src/css/style.css')
     .pipe(plumber())
-    .pipe(sass())
     .pipe(postcss([
+      precss,
       autoprefixer({ browsers: [
         "last 1 version",
         "last 2 Chrome versions",

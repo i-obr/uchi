@@ -50,6 +50,7 @@
     "gulp-svgstore": "^6.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^4.3.11",
+    "precss": "^2.0.0",
     "require-dir": "^0.3.2",
     "run-sequence": "^1.2.2",
     "vinyl-buffer": "^1.0.0",
