@@ -3,6 +3,7 @@ $column: 200px;
 
 .menu {
   width: calc(4 * $column);
+  display: flex;
 }
 
 .menu_link {

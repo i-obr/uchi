@@ -2,6 +2,7 @@ import gulp         from 'gulp';
 import precss       from 'precss';
 import plumber      from 'gulp-plumber';
 import postcss      from 'gulp-postcss';
+import flexbugs     from 'postcss-flexbugs-fixes';
 import autoprefixer from 'autoprefixer';
 import mqpacker     from 'css-mqpacker';
 import csso         from 'gulp-csso';
@@ -12,13 +13,8 @@ gulp.task('style', () => {
     .pipe(plumber())
     .pipe(postcss([
       precss,
-      autoprefixer({ browsers: [
-        "last 1 version",
-        "last 2 Chrome versions",
-        "last 2 Firefox versions",
-        "last 2 Opera versions",
-        "last 2 Edge versions"
-      ] }),
+      flexbugs,
+      autoprefixer,
       mqpacker({
         sort: true
       })
