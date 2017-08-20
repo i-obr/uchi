@@ -1,5 +1,4 @@
 import gulp         from 'gulp';
-import sass         from 'gulp-sass';
 import plumber      from 'gulp-plumber';
 import postcss      from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
