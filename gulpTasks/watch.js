@@ -6,7 +6,7 @@ import browserSync from 'browser-sync';
 gulp.task('watch', () => {
   global.watch = true;
 
-  watch('src/sass/**/*.{scss,sass}', () => {
+  watch('src/css/**/*.css', () => {
     run('style', browserSync.reload);
   });
 
