@@ -1,6 +1,153 @@
-h1 {
-  font-family: sans-serif;
-  font-weight: 300;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 42px;
   line-height: 1;
-  font-size: 32px;
+  color: #333333;
 }
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+}
+
+input[type=number] {
+  font-family: Arial, sans-serif;
+  line-height: 1;
+  color: black;
+  text-align: center;
+  box-sizing: border-box;
+
+  &:disabled {
+    background: transparent;
+    border: none;
+    color: black;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+  width: 870px;
+  margin: 0 auto;
+}
+
+.expression {
+  margin-bottom: 80px;
+
+  &__operand {
+    font-size: 42px;
+    width: 60px;
+
+    &::-webkit-input-placeholder {
+      font-family: Arial, sans-serif;
+      font-size: 42px;
+      line-height: 1;
+      color: black;
+    }
+
+    &::-moz-placeholder {
+      font-family: Arial, sans-serif;
+      font-size: 42px;
+      line-height: 1;
+      color: black;
+    }
+
+    &:-ms-input-placeholder {
+      font-family: Arial, sans-serif;
+      font-size: 42px;
+      line-height: 1;
+      color: black;
+    }
+  }
+}
+
+.scale {
+  position: relative;
+  padding-top: 50px;
+  text-align: left;
+
+  &__graphs {
+    position: absolute;
+    z-index: 1;
+    font-size: 0;
+    top: 10px;
+    left: 34px;
+    right: 58px;
+    height: 60px;
+  }
+
+  &__graph {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 0;
+
+    &--1 {
+      width: 273px;
+      height: 60px;
+    }
+
+    &--2 {
+      width: 156px;
+      height: 50px;
+    }
+  }
+
+  &__arrow {
+    pointer-events: none;
+    width: 100%;
+    height: 60px;
+
+    &--second {
+      height: 50px;
+    }
+  }
+
+  &__field {
+    font-size: 18px;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    border-radius: 4px;
+    width: 25px;
+    border: 1px solid gray;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red !important;
+}
+
+.warning {
+  background: orange;
+}
+
+

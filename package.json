@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/i-obr/start.git"
+    "url": "git+https://github.com/i-obr/uchi.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/i-obr/start/issues"
+    "url": "https://github.com/i-obr/uchi/issues"
   },
-  "homepage": "https://github.com/i-obr/start#readme",
+  "homepage": "https://github.com/i-obr/uchi#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.1",
     "babel-core": "^6.25.0",
