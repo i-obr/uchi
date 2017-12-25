@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Uchi.ru</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/style.css"> </head>
+  <body>
+    <div class="content">
+      <div class="expression">
+        <input class="expression__operand" id="inputOut-1" name="number" type="number" placeholder="?" disabled>
+        <span class="expression__operation">+</span>
+        <input class="expression__operand" id="inputOut-2" name="number" type="number" placeholder="?" disabled>
+        <span class="expression__operation">=</span>
+        <input class="expression__operand" id="result" name="number" type="number" placeholder="?" disabled> </div>
+      <div class="scale">
+        <div class="scale__graphs">
+          <div class="scale__graph  scale__graph--1">
+            <input class="scale__field" id="inputIn-1" type="number" name="number" placeholder="?" autofocus>
+            <svg class="scale__arrow" viewBox="0 0 195 60" width="195" height="60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="red" stroke-width="2" d="M0,60 C20,40 97,0 195,60" />
+              <polygon points="190,52 195,60 180,58" stroke-width="1" fill="red" stroke="none" /> </svg>
+          </div>
+          <div class="scale__graph  scale__graph--2">
+            <input class="scale__field" id="inputIn-2" type="number" name="number" placeholder="?">
+            <svg class="scale__arrow  scale__arrow--second" viewBox="0 0 195 60" width="195" height="60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="red" stroke-width="2" d="M0,60 C20,40 97,0 195,60" />
+              <polygon points="190,52 195,60 180,58" stroke-width="1" fill="red" stroke="none" /> </svg>
+          </div>
+        </div>
+        <img src="img/sprite.png" alt="Scale"> </div>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
