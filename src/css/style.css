@@ -147,7 +147,7 @@ input[type=number] {
 }
 
 .warning {
-  background: orange;
+  background: orange !important;
 }
 
 
